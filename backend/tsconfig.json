@@ -19,9 +19,10 @@
 		"inlineSources": true,
 		"isolatedModules": false,
 		"lib": ["ESNext"],
-		"module": "esnext",
-		"moduleResolution": "bundler",
-		"target": "esnext"
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "esnext",
+		"baseUrl": "src"
 	},
 	"include": ["src"]
 }
