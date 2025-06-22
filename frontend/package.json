@@ -1,5 +1,5 @@
 {
-	"name": "think-flow-frontend",
+	"name": "@think-flow/frontend",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -11,6 +11,10 @@
 		"prettify": "prettier --log-level warn --cache --write '{src/**/*,*}.{ts,tsx,jsjson,yml,scss}' '!**/{node_modules,dist}/**/*'"
 	},
 	"dependencies": {
+		"@think-flow/backend": "workspace:*",
+		"@tanstack/react-query": "^5.81.2",
+		"@trpc/client": "^11.4.2",
+		"@trpc/react-query": "^11.4.2",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0"
 	},
