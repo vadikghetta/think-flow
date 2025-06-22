@@ -1,0 +1,22 @@
+printWidth: 120
+trailingComma: none
+tabWidth: 4
+semi: true
+singleQuote: false
+bracketSpacing: true
+endOfLine: lf
+useTabs: true
+jsxSingleQuote: false
+quoteProps: consistent
+# {
+#     printWidth: 120,         // Максимальная длина строки — 120 символов. Если строка длиннее, она будет перенесена.
+#     trailingComma: none,     // Запятые в конце объектов или массивов не добавляются (даже в многострочных).
+#     tabWidth: 4,             // Размер табуляции — 4 пробела (если бы использовались пробелы).
+#     semi: true,              // В конце каждой инструкции ставится точка с запятой.
+#     singleQuote: false,      // Для строк используются двойные кавычки (" "), а не одинарные (' ').
+#     bracketSpacing: true,    // В объектах пробелы внутри фигурных скобок: { foo: bar }, а не {foo: bar}.
+#     endOfLine: lf,           // Переводы строк используются в формате LF (Unix стиль).
+#     useTabs: true,           // Используются табы вместо пробелов для отступов.
+#     jsxSingleQuote: false,   // В JSX тоже используются двойные кавычки (" "), а не одинарные.
+#     quoteProps: consistent   // Кавычки вокруг ключей объекта добавляются только если хотя бы один ключ требует кавычек.
+# }
