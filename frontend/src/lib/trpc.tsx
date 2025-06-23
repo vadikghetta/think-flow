@@ -12,9 +12,7 @@ const queryClient = new QueryClient({
 			refetchOnWindowFocus: false
 		}
 	}
-})
-
-
+});
 const trpcClient = trpc.createClient({
 	links: [
 		httpBatchLink({

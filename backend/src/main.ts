@@ -9,6 +9,7 @@ app.use(cors());
 app.get("/ping", (req, res) => {
 	res.send("pong");
 });
+
 app.use(
 	"/trpc",
 	trpExpress.createExpressMiddleware({
