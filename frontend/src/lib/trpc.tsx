@@ -1,6 +1,6 @@
-import { createTRPCReact, httpBatchLink } from "@trpc/react-query";
-import { type TrpcRouter } from "@think-flow/backend/src/trpc.ts";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { type TrpcRouter } from "@think-flow/backend/src/trpc.ts";
+import { createTRPCReact, httpBatchLink } from "@trpc/react-query";
 import type { ReactNode } from "react";
 
 export const trpc = createTRPCReact<TrpcRouter>();

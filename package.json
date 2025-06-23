@@ -7,13 +7,24 @@
 		"front": "pnpm --filter @think-flow/frontend",
 		"dev": "pnpm -r --parallel dev",
 		"types": "pnpm -r --parallel types",
-		"prettify": "pnpm -r --parallel prettify"
+		"prettify": "pnpm -r --parallel prettify",
+		"lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ext .ts",
+		"lint:fix": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ext .ts --fix"
 	},
 	"devDependencies": {
-		"rimraf": "^6.0.1",
+		"@eslint/js": "^9.29.0",
+		"@typescript-eslint/eslint-plugin": "^8.35.0",
+		"@typescript-eslint/parser": "^8.35.0",
+		"eslint": "^9.29.0",
+		"eslint-config-prettier": "^10.1.5",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"globals": "^16.2.0",
 		"prettier": "^3.5.3",
+		"rimraf": "^6.0.1",
 		"ts-node": "^10.9.2",
 		"ts-node-dev": "^2.0.0",
-		"typescript": "^5.8.3"
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.35.0"
 	}
 }

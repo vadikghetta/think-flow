@@ -8,7 +8,8 @@
 		"build": "rimraf ./dist &&  tsc --build ./tsconfig.json",
 		"start": "node ./dist/main.js",
 		"prettify": "prettier --log-level warn --cache --write '{src/**/*,*}.{ts,tsx,jsjson,yml,scss}' '!**/{node_modules,dist}/**/*'",
-		"types": "tsc --noEmit --project ./tsconfig.json"
+		"types": "tsc --noEmit --project ./tsconfig.json",
+		"lint": "eslint src --ext .js,.jsx,.ts,.tsx"
 	},
 	"dependencies": {
 		"@trpc/server": "^11.4.2",

@@ -12,23 +12,21 @@
 		"types": "tsc --noEmit --project ./tsconfig.app.json && tsc --noEmit --project ./tsconfig.node.json "
 	},
 	"dependencies": {
-		"@think-flow/backend": "workspace:*",
 		"@tanstack/react-query": "^5.81.2",
+		"@think-flow/backend": "workspace:*",
 		"@trpc/client": "^11.4.2",
 		"@trpc/react-query": "^11.4.2",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.25.0",
 		"@types/react": "^19.1.2",
 		"@types/react-dom": "^19.1.2",
 		"@vitejs/plugin-react-swc": "^3.9.0",
-		"eslint": "^9.25.0",
+		"eslint-plugin-react": "^7.37.5",
 		"eslint-plugin-react-hooks": "^5.2.0",
-		"eslint-plugin-react-refresh": "^0.4.19",
+		"eslint-plugin-react-refresh": "^0.4.20",
 		"globals": "^16.0.0",
-		"typescript-eslint": "^8.30.1",
 		"vite": "^6.3.5"
 	}
 }
