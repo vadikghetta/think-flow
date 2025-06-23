@@ -1,5 +1,19 @@
 {
 	"name": "think-flow",
 	"private": "true",
-	"version": "0.0.0"
+	"version": "0.0.0",
+	"scripts": {
+		"back": "pnpm --filter @think-flow/backend",
+		"front": "pnpm --filter @think-flow/frontend",
+		"dev": "pnpm -r --parallel dev",
+		"types": "pnpm -r --parallel types",
+		"prettify": "pnpm -r --parallel prettify"
+	},
+	"devDependencies": {
+		"rimraf": "^6.0.1",
+		"prettier": "^3.5.3",
+		"ts-node": "^10.9.2",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.8.3"
+	}
 }

@@ -19,14 +19,12 @@ const trpcClient = trpc.createClient({
 			url: "http://localhost:8080/trpc"
 		})
 	]
-})
+});
 
 export const TrpcProvider = ({ children }: { children: ReactNode }) => {
 	return (
 		<trpc.Provider client={trpcClient} queryClient={queryClient}>
-			<QueryClientProvider client={queryClient}>
-				{children}
-			</QueryClientProvider>
+			<QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
 		</trpc.Provider>
-	)
-}
+	);
+};

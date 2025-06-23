@@ -4,16 +4,16 @@ export const Main = () => {
 	const { data, isLoading, isError } = trpc.getThoughts.useQuery();
 
 	if (isLoading) {
-		return <span>Loading</span>
+		return <span>Loading</span>;
 	}
 	if (isError) {
-		return <span>Error message</span>
+		return <span>Error message</span>;
 	}
 
 	return (
 		<main>
 			<h1>Hello</h1>
-			{data?.thoughts.map(el => (
+			{data?.thoughts.map((el) => (
 				<div className="" key={el.name}>
 					<h2>{el.name}</h2>
 					<p>{el.description}</p>
@@ -21,5 +21,5 @@ export const Main = () => {
 				</div>
 			))}
 		</main>
-	)
-}
+	);
+};
