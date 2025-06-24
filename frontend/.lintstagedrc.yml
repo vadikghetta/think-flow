@@ -3,6 +3,6 @@
   - "prettier --write"
   - "git add"
 
-"*.{css,scss,json,md}":
+"*.{json,md}":
   - "prettier --write"
   - "git add"

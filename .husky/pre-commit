@@ -2,3 +2,5 @@ pnpm types
 
 
 pnpm lint-staged
+
+pnpm lint:styles
