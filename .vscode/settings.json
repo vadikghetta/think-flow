@@ -11,5 +11,6 @@
 	"eslint.format.enable": true,
 	"[yaml]": {
 		"editor.formatOnSave": false
-	}
+	},
+	"stylelint.validate": ["css", "scss"]
 }
