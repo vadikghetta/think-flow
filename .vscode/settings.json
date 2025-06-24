@@ -1,15 +1,15 @@
 {
-	// "[typescript]": {
-	// 	"editor.defaultFormatter": "esbenp.prettier-vscode"
-	// },
-	// "editor.tabSize": 4,
-	// "editor.insertSpaces": false,
-	// "editor.formatOnSave": true,
-	// "editor.codeActionsOnSave": {
-	// 	"source.fixAll.eslint": "always"
-	// },
-	// "eslint.format.enable": true,
-	// "[yaml]": {
-	// 	"editor.formatOnSave": false
-	// }
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always"
+	},
+	"eslint.format.enable": true,
+	"[yaml]": {
+		"editor.formatOnSave": false
+	}
 }
