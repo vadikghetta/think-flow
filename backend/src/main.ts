@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import * as trpExpress from "@trpc/server/adapters/express";
 import cors from "cors";
 import express from "express";
@@ -16,7 +17,6 @@ app.use(
 		router: trpcRouter
 	})
 );
-
 app.listen(8080, () => {
-	console.info("Listening in http://localhost:8080");
+	console.info("Listening  in http://localhost:8080");
 });

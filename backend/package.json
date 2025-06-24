@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"type": "commonjs",
 	"scripts": {
-		"dev": "ts-node-dev --rs ./src/main.ts",
+		"dev": "tsx watch src/main.ts",
 		"build": "rimraf ./dist &&  tsc --build ./tsconfig.json",
 		"start": "node ./dist/main.js",
 		"prettify": "prettier --log-level warn --cache --write '{src/**/*,*}.{ts,tsx,jsjson,yml,scss}' '!**/{node_modules,dist}/**/*'",
@@ -19,6 +19,8 @@
 	"devDependencies": {
 		"@types/cors": "^2.8.19",
 		"@types/express": "^5.0.3",
-		"@types/node": "^24.0.3"
+		"@types/node": "^24.0.3",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.20.3"
 	}
 }
