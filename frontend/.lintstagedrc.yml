@@ -6,3 +6,7 @@
 "*.{json,md}":
   - "prettier --write"
   - "git add"
+
+"*.scss":
+  - "stylelint --fix"
+  - "git add"

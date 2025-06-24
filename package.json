@@ -10,6 +10,7 @@
 		"prettify": "pnpm -r --parallel prettify",
 		"lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ext .ts",
 		"lint:fix": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ext .ts --fix",
+		"lint:styles": "pnpm --filter @think-flow/frontend stylelint **/*.scss --fix",
 		"prepare": "husky"
 	},
 	"devDependencies": {

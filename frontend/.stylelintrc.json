@@ -5,6 +5,7 @@
 	"rules": {
 		"selector-class-pattern": "^.*$",
 		"color-no-invalid-hex": true,
+		"declaration-empty-line-before": null,
 		"declaration-property-value-no-unknown": null,
 		"declaration-block-no-redundant-longhand-properties": [
 			true,
@@ -22,6 +23,125 @@
 			{
 				"except": ["first-nested"],
 				"ignore": ["after-comment"]
+			}
+		],
+		"order/properties-order": [
+			{
+				"groupName": "Layout",
+				"emptyLineBefore": "always",
+				"properties": [
+					"display",
+					"visibility",
+					"position",
+					"top",
+					"right",
+					"bottom",
+					"left",
+					"z-index",
+					"float",
+					"clear"
+				]
+			},
+			{
+				"groupName": "Box Model",
+				"emptyLineBefore": "always",
+				"properties": [
+					"width",
+					"min-width",
+					"max-width",
+					"height",
+					"min-height",
+					"max-height",
+					"box-sizing",
+					"margin",
+					"margin-top",
+					"margin-right",
+					"margin-bottom",
+					"margin-left",
+					"padding",
+					"padding-top",
+					"padding-right",
+					"padding-bottom",
+					"padding-left",
+					"overflow"
+				]
+			},
+			{
+				"groupName": "Flex/Grid",
+				"emptyLineBefore": "always",
+				"properties": [
+					"flex",
+					"flex-grow",
+					"flex-shrink",
+					"flex-basis",
+					"flex-direction",
+					"flex-wrap",
+					"justify-content",
+					"align-items",
+					"align-self",
+					"gap",
+					"row-gap",
+					"column-gap",
+					"grid",
+					"grid-template-columns",
+					"grid-template-rows",
+					"grid-area",
+					"grid-column",
+					"grid-row"
+				]
+			},
+			{
+				"groupName": "Typography",
+				"emptyLineBefore": "always",
+				"properties": [
+					"color",
+					"font",
+					"font-family",
+					"font-size",
+					"font-weight",
+					"line-height",
+					"letter-spacing",
+					"text-align",
+					"text-transform",
+					"text-decoration",
+					"white-space"
+				]
+			},
+			{
+				"groupName": "Visual",
+				"emptyLineBefore": "always",
+				"properties": [
+					"background",
+					"background-color",
+					"background-image",
+					"background-position",
+					"background-repeat",
+					"border",
+					"border-width",
+					"border-style",
+					"border-color",
+					"border-radius",
+					"box-shadow",
+					"opacity"
+				]
+			},
+			{
+				"groupName": "Animation",
+				"emptyLineBefore": "always",
+				"properties": [
+					"transition",
+					"transition-delay",
+					"transition-duration",
+					"transition-property",
+					"transition-timing-function",
+					"transform",
+					"animation"
+				]
+			},
+			{
+				"groupName": "Misc",
+				"emptyLineBefore": "always",
+				"properties": ["cursor", "pointer-events", "user-select", "appearance"]
 			}
 		]
 	}
