@@ -56,6 +56,9 @@ importers:
       '@trpc/server':
         specifier: ^11.4.2
         version: 11.4.2(typescript@5.8.3)
+      chalk:
+        specifier: ^5.4.1
+        version: 5.4.1
       cors:
         specifier: ^2.8.5
         version: 2.8.5
