@@ -1,21 +1,27 @@
 import { useParams } from "react-router";
-import type { ArticleRouteParams } from "../../lib/routes";
+import { trpc } from "../../lib/trpc";
 
 export const Article = () => {
-	const { slug } = useParams<ArticleRouteParams>();
+	const { slug } = useParams<{ slug: string }>();
+	const { data, error, isError, isLoading } = trpc.getArticle.useQuery({
+		slug: slug ?? ""
+	});
+
+	if (isLoading) {
+		return <span>Loading</span>;
+	}
+	if (isError) {
+		return <span>Error message {error.message}</span>;
+	}
+
+	if (!data?.article) {
+		return <span>Article not found</span>;
+	}
 	return (
 		<main>
-			<h1>Title {slug}</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores odio deserunt reiciendis odit, optio
-				perspiciatis laboriosam repudiandae modi eligendi quis ratione, voluptatibus quaerat hic doloribus ullam
-				ipsum alias repellendus.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nulla asperiores dolore quas. Quisquam
-				minus quaerat sapiente excepturi culpa laudantium numquam fugiat voluptate eius saepe corrupti
-				accusamus, consequuntur a blanditiis!
-			</p>
+			<h1>{data.article.name}</h1>
+			<p>{data.article.description}</p>
+			<p dangerouslySetInnerHTML={{ __html: data.article.text }}></p>
 			<p>Lore</p>
 		</main>
 	);

@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import { getArticlePageRoute } from "../../lib/routes";
 import { trpc } from "../../lib/trpc";
 
 export const Main = () => {
@@ -15,13 +14,13 @@ export const Main = () => {
 	return (
 		<main>
 			<h1>Hello</h1>
-			{data?.thoughts.map((el) => (
-				<div className="" key={el.name}>
+			{data?.thoughts.map((item) => (
+				<div className="" key={item.name}>
 					<h2>
-						<Link to={getArticlePageRoute({ slug: el.nick })}>{el.name}</Link>
+						<Link to={`/article/${item.nick}`}>{item.name}</Link>
 					</h2>
-					<p>{el.description}</p>
-					<span>{el.nick}</span>
+					<p>{item.description}</p>
+					<span>{item.nick}</span>
 				</div>
 			))}
 		</main>
