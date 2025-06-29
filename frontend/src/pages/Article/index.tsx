@@ -1,7 +1,8 @@
 import { useParams } from "react-router";
+import type { ArticleRouteParams } from "../../lib/routes";
 
 export const Article = () => {
-	const { slug } = useParams<{ slug: string }>();
+	const { slug } = useParams<ArticleRouteParams>();
 	return (
 		<main>
 			<h1>Title {slug}</h1>
