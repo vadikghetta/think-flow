@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { trpc } from "../../lib/trpc";
 
 export const Main = () => {
@@ -15,7 +16,9 @@ export const Main = () => {
 			<h1>Hello</h1>
 			{data?.thoughts.map((el) => (
 				<div className="" key={el.name}>
-					<h2>{el.name}</h2>
+					<h2>
+						<Link to={`/article/${el.nick}`}>{el.name}</Link>
+					</h2>
 					<p>{el.description}</p>
 					<span>{el.nick}</span>
 				</div>
