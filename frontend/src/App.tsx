@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-// import { articleParams, getArticlePageRoute, getMainPageRoute } from "./lib/routes";
+import { MainLayout } from "./layouts/main";
 import { TrpcProvider } from "./lib/trpc";
 import { Article } from "./pages/Article";
 import { Main } from "./pages/MainPage";
@@ -10,8 +10,10 @@ export const App = () => {
 		<TrpcProvider>
 			<BrowserRouter>
 				<Routes>
-					<Route path={AppRoutes.main} element={<Main />} />
-					<Route path={AppRoutes.article} element={<Article />} />
+					<Route element={<MainLayout />}>
+						<Route path={AppRoutes.main} element={<Main />} />
+						<Route path={AppRoutes.article} element={<Article />} />
+					</Route>
 				</Routes>
 			</BrowserRouter>
 		</TrpcProvider>
