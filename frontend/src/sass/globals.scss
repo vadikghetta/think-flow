@@ -1,0 +1,12 @@
+/* stylelint-disable-next-line import-notation */
+@import "../../node_modules/reset-css/sass/reset";
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}

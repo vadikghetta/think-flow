@@ -8,7 +8,7 @@ export default [
 	{
 		files: ["**/*.{ts,tsx,js,jsx}"],
 		plugins: {
-			react: pluginReact,
+			"react": pluginReact,
 			"react-hooks": pluginReactHooks,
 			"react-refresh": pluginReactRefresh
 		},
@@ -20,20 +20,16 @@ export default [
 			}
 		},
 		rules: {
-			// ✅ React core
 			"react/jsx-uses-react": "off", // не нужен с React 17+
 			"react/react-in-jsx-scope": "off", // не нужен с React 17+
 			"react/jsx-uses-vars": "warn",
-
+			"@typescript-eslint/consistent-type-definitions": "off",
 			// ✅ React Hooks
 			"react-hooks/rules-of-hooks": "error",
 			"react-hooks/exhaustive-deps": "warn",
 
 			// ✅ React Fast Refresh
-			"react-refresh/only-export-components": [
-				"warn",
-				{ allowConstantExport: true }
-			]
+			"react-refresh/only-export-components": ["warn", { allowConstantExport: true }]
 		},
 		settings: {
 			react: {

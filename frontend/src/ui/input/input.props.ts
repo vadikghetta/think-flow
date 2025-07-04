@@ -1,5 +1,5 @@
 import type { InputHTMLAttributes, ReactNode } from "react";
 
-export type IInputProps = {
+export interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
 	children: ReactNode;
-} & InputHTMLAttributes<HTMLInputElement>;
+}

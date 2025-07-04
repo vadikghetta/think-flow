@@ -1,5 +1,5 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 
-export type IButtonProps = {
+export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	children: ReactNode;
-} & ButtonHTMLAttributes<HTMLButtonElement>;
+}
