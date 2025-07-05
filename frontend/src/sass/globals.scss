@@ -1,12 +1,15 @@
 @use "./vars.module" as *;
 @use "./reset";
+@use "./fonts";
 
 body {
 	color: $light;
+	font-family: $main-font;
 
 	background-color: $dark;
 }
 
 a {
+	color: inherit;
 	text-decoration: none;
 }
